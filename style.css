@@ -1,0 +1,162 @@
+body
+{
+    margin: 0;
+    padding: 0;
+}
+
+section
+{
+    display: grid;
+    border: 3px black double;
+    margin: 10px;
+    padding: 5px;
+    text-align: center;
+}
+
+header,main,footer
+{
+    display: grid;
+    margin: 1px;
+    padding: 5px;
+    border: 1px solid blue;
+}
+
+h1
+{
+    margin: 1px;
+    border: fuchsia 3px double;
+}
+
+h2
+{
+    margin: 1px;
+    border:teal double 3px;
+}
+
+h3
+{
+    margin: 1px;
+    border: salmon double 3px;
+}
+
+.rangee1
+{
+    margin: 1px;
+    padding: 5px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    border: 1px blueviolet solid;
+}
+
+.petiterangee1
+{
+    margin: 1px;
+    padding: 5px;
+}
+
+.petitepetiterangee1
+{
+    margin: 1px;
+    padding: 5px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    border: fuchsia 1px dashed;
+}
+
+.rangee2
+{
+    margin: 1px;
+    padding: 5px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    border: 1px pink solid;
+}
+.petiterangee2
+{
+    margin: 1px;
+    padding: 5px;
+}
+
+.petitepetiterangee2
+{
+    margin: 1px;
+    padding: 5px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    border: fuchsia 1px dashed;
+}
+
+.rangee3
+{
+    margin: 1px;
+    padding: 5px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    border: 1px purple solid;
+}
+
+.petiterangee3
+{
+    margin: 1px;
+    padding: 5px;
+}
+
+.petitepetiterangee3
+{
+    margin: 1px;
+    padding: 5px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    border: fuchsia 1px dashed;
+}
+
+@media screen and (max-width: 900px)
+{
+
+    section
+    {
+        border: 3px black double ;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        flex-grow: 1;
+        padding: 5px;
+        margin: 10px;
+    }
+    
+    h1,h2,h3
+    {
+        border: firebrick 3px double;
+    }
+
+    .titrerangee1,.titrerangee2,.titrerangee3
+    {
+        display: flex;
+        flex-direction: column ;
+    }
+
+    .rangee1.rangee2.rangee3
+    {
+        border: 1px pink solid;
+        padding: 5px;
+        margin: 10px;
+    }
+    
+    .petiterangee1,.petiterangee2,.petiterangee3
+    {
+        border: red 1px dashed;
+        padding: 5px;
+        margin: 10px;
+    }
+    
+    .petitepetiterangee1,.petitepetiterangee2,.petitepetiterangee3
+    {
+        border: deeppink 1px solid;
+        padding: 5px;
+        margin: 10px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+}
